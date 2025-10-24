@@ -82,7 +82,7 @@ Este projeto é baseado no design original disponível no Figma:
 
 ## 📫 Contato
 
-- **LinkedIn**: [Natasha Brandão](https://github.com/NatashaB-randao](https://www.linkedin.com/in/natasha-brand%C3%A3o/)
+- **LinkedIn**: [NatashaB-randao](https://www.linkedin.com/in/natasha-brand%C3%A3o/)
 - **GitHub**: [NatashaB-randao](https://github.com/NatashaB-randao)
 
 ## 📄 Licença
