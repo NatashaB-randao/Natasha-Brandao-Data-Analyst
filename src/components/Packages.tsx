@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Check } from 'lucide-react';
 
 export function Packages() {
-  const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaBH';
+  const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaB';
   
   const packages = [
     {

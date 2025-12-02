@@ -3,7 +3,7 @@ import { FileBarChart, SearchCheck, TrendingUp, GraduationCap, PieChart } from '
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 
 export function IndividualServices() {
-  const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaBH';
+  const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaB';
   
   const services = [
     {

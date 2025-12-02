@@ -19,7 +19,7 @@ function KaggleIcon({ size = 24 }) {
 }
 
 export function Hero() {
-  const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaBH';
+  const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaB';
   
   return (
     <section id="hero" className="min-h-screen bg-gradient-to-br from-[#0A3D62] via-[#2F3640] to-[#0A3D62] text-[#F5F6FA] pt-20">
