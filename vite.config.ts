@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Natasha-Brandao-Data-Analyst/', // importante para GitHub Pages
+  base: '/Portfolio-Dados/', // importante para GitHub Pages
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
