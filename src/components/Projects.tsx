@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Projects() {
+  // Dados mantidos caso você queira usar em gráficos futuros
   const salesData = [
     { month: 'Jan', vendas: 45, previsao: 43 },
     { month: 'Fev', vendas: 52, previsao: 50 },
@@ -71,10 +72,10 @@ export function Projects() {
       details: 'Análise aprofundada dos custos de transporte na Embraer, focando na área de logística e supply chain. Este estudo abordará os custos associados ao transporte de mercadorias, podendo englobar modalidades como transporte terrestre, marítimo e aéreo.'
     },
     {
-      title: 'MAP: Analisando os Mal-entendidos Matemáticos dos Estudantes',
-      description: 'Desenvolvimento de um modelo de Processamento de Linguagem Natural (NLP) capaz de prever de forma precisa os mal-entendidos matemáticos a partir das explicações escritas pelos estudantes.',
+      title: 'MAP: Analisando os Mal-entendidos Matemáticos',
+      description: 'Modelo de NLP capaz de prever mal-entendidos matemáticos a partir das explicações dos estudantes.',
       image: 'https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGludGVsbGlnZW5jZSUyMHZpc3VhbGl6YXRpb258ZW58MXx8fHwxNzYwNzE0OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tech: ['Python', 'NLP', 'Transformers (DeBERTa-v3)', 'Treinamento e inferência de modelos de linguagem'],
+      tech: ['Python', 'NLP', 'Transformers', 'Deep Learning'],
       chart: (
         <div className="text-center py-6">
           <a
@@ -89,7 +90,26 @@ export function Projects() {
       ),
       details: 'O objetivo é criar uma ferramenta que auxilie educadores a identificar e corrigir padrões de pensamento incorretos, melhorando a aprendizagem em matemática.'
     },
-
+    // NOVO PROJETO ADICIONADO AQUI
+    {
+      title: 'Portfólio de Dashboards',
+      description: 'Coleção centralizada de dashboards interativos e visualizações de dados estratégicas.',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+      tech: ['Power BI', 'Data Viz', 'Business Intelligence'],
+      chart: (
+        <div className="text-center py-6">
+          <a
+            href="https://sites.google.com/view/portflionatashabrando/in%C3%ADcio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#0A3D62] underline text-lg font-semibold hover:text-[#082A44] transition-colors"
+          >
+            Acesse o Portfólio de Dashboards
+          </a>
+        </div>
+      ),
+      details: 'Neste portfólio dedicado, apresento diversos casos de uso de Dashboards interativos, focando em storytelling de dados e insights visuais para tomada de decisão.'
+    }
   ];
 
   return (
@@ -121,8 +141,8 @@ export function Projects() {
               >
                 <Dialog>
                   <DialogTrigger asChild>
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow group">
-                      <div className="relative h-48 overflow-hidden">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow group h-full flex flex-col">
+                      <div className="relative h-48 overflow-hidden shrink-0">
                         <ImageWithFallback
                           src={project.image}
                           alt={project.title}
@@ -130,14 +150,14 @@ export function Projects() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0A3D62]/80 to-transparent"></div>
                       </div>
-                      <div className="p-6">
+                      <div className="p-6 flex flex-col flex-grow">
                         <h3 className="text-xl font-['Poppins',sans-serif] text-[#0A3D62] mb-3">
                           {project.title}
                         </h3>
-                        <p className="text-[#2F3640] mb-4">
+                        <p className="text-[#2F3640] mb-4 flex-grow">
                           {project.description}
                         </p>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mb-4">
                           {project.tech.map((tech, i) => (
                             <span
                               key={i}
@@ -147,7 +167,7 @@ export function Projects() {
                             </span>
                           ))}
                         </div>
-                        <div className="mt-4 flex items-center gap-2 text-[#60A3BC]">
+                        <div className="flex items-center gap-2 text-[#60A3BC] mt-auto">
                           <ExternalLink size={16} />
                           <span className="text-sm">Ver detalhes</span>
                         </div>
