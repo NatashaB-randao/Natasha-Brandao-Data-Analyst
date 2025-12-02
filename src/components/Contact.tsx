@@ -18,10 +18,6 @@ function KaggleIcon({ size = 24 }) {
 
 export function Contact() {
   const formUrl = 'https://jruwbrxr.formester.com/f/OBARTlNaB';
-<<<<<<< HEAD
-
-=======
->>>>>>> 04a4ed9f8dacbea17eb5b742be8ea4b4c16a8e44
   
   return (
     <section id="contact" className="py-20 bg-[#F5F6FA]">
