@@ -56,9 +56,9 @@
         "vite": "6.3.5"
     },
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
-    }
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -b gh-pages -r https://github.com/NatashaB-randao/Portfolio-Dados.git"
+}
 }
