@@ -99,12 +99,12 @@ export function Projects() {
       chart: (
         <div className="text-center py-6">
           <a
-            href="https://sites.google.com/view/portflionatashabrando/in%C3%ADcio"
+            href="https://tundra-blossom-858.notion.site/Portf-lio-2c67b06a230d817fbe69ea4c43e06ecf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0A3D62] underline text-lg font-semibold hover:text-[#082A44] transition-colors"
           >
-            Acesse o Portfólio de Dashboards
+            Acesse o Portfólio de Projetos
           </a>
         </div>
       ),
