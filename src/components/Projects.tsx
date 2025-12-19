@@ -92,7 +92,7 @@ export function Projects() {
     },
     // NOVO PROJETO ADICIONADO AQUI
     {
-      title: 'Portfólio de Dashboards',
+      title: 'Portfólio de Projetos',
       description: 'Coleção centralizada de dashboards interativos e visualizações de dados estratégicas.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
       tech: ['Power BI', 'Data Viz', 'Business Intelligence'],
@@ -108,7 +108,7 @@ export function Projects() {
           </a>
         </div>
       ),
-      details: 'Neste portfólio dedicado, apresento diversos casos de uso de Dashboards interativos, focando em storytelling de dados e insights visuais para tomada de decisão.'
+      details: 'Neste portfólio dedicado, apresento diversos projetos e casos de uso de Dashboards interativos, focando em storytelling de dados e insights visuais para tomada de decisão.'
     }
   ];
 
